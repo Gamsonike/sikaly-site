@@ -3,39 +3,61 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sikaly</title>
-<meta name="description" content="Simple money tracking for traders, individuals and small businesses.">
+<title>Sikaly: simple money tracking</title>
+<meta name="description" content="Simple money tracking for traders, individuals and small businesses. Works offline. Your records stay on your phone.">
+<link rel="icon" href="icon.png" type="image/png">
+<meta property="og:title" content="Sikaly: simple money tracking">
+<meta property="og:description" content="Record sales and expenses, see who owes you, and understand your profit. Works offline.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://sikaly.app/">
+<meta property="og:image" content="https://sikaly.app/banner.png">
+<meta name="twitter:card" content="summary_large_image">
 <style>
-  :root{--bg:#fbfbf8;--fg:#1c1d1f;--muted:#5c6066;--line:#dcdcd4;--accent:#2f4a9e}
-  @media (prefers-color-scheme:dark){:root{--bg:#15171a;--fg:#e8e8e4;--muted:#a3a7ad;--line:#2d3136;--accent:#9db2ff}}
+  :root{--bg:#fbfbf8;--fg:#1c1d1f;--muted:#5c6066;--line:#dcdcd4;--accent:#2f4a9e;--card:#f1f1ea}
+  @media (prefers-color-scheme:dark){:root{--bg:#15171a;--fg:#e8e8e4;--muted:#a3a7ad;--line:#2d3136;--accent:#9db2ff;--card:#1d2024}}
   *{box-sizing:border-box}
   body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.65 Georgia,"Times New Roman",serif}
-  main{max-width:42rem;margin:0 auto;padding:64px 20px 80px}
-  h1{font-size:2.6rem;line-height:1.1;margin:0}
-  .tag{color:var(--muted);margin:8px 0 28px;font-size:1.15rem}
+  main{max-width:46rem;margin:0 auto;padding:28px 20px 80px}
+  .banner{display:block;width:100%;height:auto;border-radius:20px;margin:0 0 32px}
+  h1{font-size:2.4rem;line-height:1.1;margin:0}
+  .tag{color:var(--muted);margin:8px 0 24px;font-size:1.15rem}
+  h2{font-size:1.15rem;margin:2em 0 .6em}
   p{margin:.8em 0}
-  ul{padding-left:1.2em}
-  li{margin:.4em 0}
+  ul.features{list-style:none;padding:0;margin:0;display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr))}
+  ul.features li{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px 16px;margin:0}
+  ul.features strong{display:block;font-family:system-ui,sans-serif;font-size:.95rem;margin-bottom:2px}
+  ul.features span{color:var(--muted);font-size:.95rem;line-height:1.5}
+  .soon{display:inline-block;margin-top:8px;padding:8px 14px;border:1px solid var(--line);border-radius:999px;font-family:system-ui,sans-serif;font-size:.9rem;color:var(--muted)}
   a{color:var(--accent)}
-  footer{margin-top:2.5em;padding-top:1.2em;border-top:1px solid var(--line);font-family:system-ui,sans-serif;font-size:.95rem}
+  footer{margin-top:3em;padding-top:1.2em;border-top:1px solid var(--line);font-family:system-ui,sans-serif;font-size:.95rem}
   footer a{margin-right:1.2em}
 </style>
 </head>
 <body>
 <main>
+  <img class="banner" src="banner.png" width="1024" height="500"
+       alt="Sikaly: a white coin with the letter S on an indigo background, with the line Every bit of money counts.">
+
   <h1>Sikaly</h1>
   <p class="tag">Simple money tracking for traders, individuals and small businesses.</p>
 
   <p>Record your sales and expenses, see who owes you, and understand your profit. Sikaly works offline and keeps your records on your phone.</p>
+  <span class="soon">Android app. Coming soon to Google Play.</span>
 
-  <ul>
-    <li>Income and expense records with categories</li>
-    <li>A debt list showing who owes you and what they have paid</li>
-    <li>Daily summary, charts and spending breakdown</li>
-    <li>Export your records as a spreadsheet file</li>
+  <h2>What it does</h2>
+  <ul class="features">
+    <li><strong>Sales and expenses</strong><span>Add entries in seconds, with categories made for everyday trading.</span></li>
+    <li><strong>Who owes me</strong><span>Track customers on credit and record part-payments.</span></li>
+    <li><strong>Daily profit</strong><span>See today's money in, money out and profit at a glance.</span></li>
+    <li><strong>Charts</strong><span>Weekly, monthly and yearly views, with a spending breakdown.</span></li>
+    <li><strong>Three modes</strong><span>Trader, Personal or Company, each with the right categories.</span></li>
+    <li><strong>Private by design</strong><span>No account, no ads, and the app does not connect to the internet.</span></li>
+    <li><strong>PIN lock</strong><span>Keep your records safe if someone borrows your phone.</span></li>
+    <li><strong>Backup and export</strong><span>Save a backup file, or export a spreadsheet for your accountant.</span></li>
   </ul>
 
-  <p>Contact: <a href="mailto:isaacgamah.dev@gmail.com">isaacgamah.dev@gmail.com</a></p>
+  <h2>Contact</h2>
+  <p><a href="mailto:support@sikaly.app">support@sikaly.app</a></p>
 
   <footer>
     <a href="privacy.html">Privacy Policy</a>
